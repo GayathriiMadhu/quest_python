@@ -1,0 +1,25 @@
+ASSIGNMENTS
+
+Day2:
+
+1. What is the alternative implementation of function overloading in Python?
+2. Why there is no implicit type casting in Python ?
+3. Why there is no ++ and -- (increment/decrement) operators in Python?
+4. What is the difference between @static method and @class method?
+5. What is the difference between __new__() and __init__() ?
+6. What is the syntax to use switch-case in Python. Given an example.
+7. Can the key within a dictionary be a composite value like a list or tuple, or should it be an atomic value such as number or string?
+
+Day2 program assignments:
+
+1. Find sum of Even placed digits in a number
+2. Find biggest digit in a number
+3. Find 2nd smallest digit in a number
+4. Check if a number is Prime
+5. Print an equi lateral triangle of n lines
+6. Print the Pascals triangle of n lines
+7. Print the Fibo series of n terms with 1st 2 terms as 1 and 2.
+8. Count the number of Prime digits in a number
+9. Print a hollow square of n lines
+10.Print X shape made up of stars of n lines
+11.Print a hollow square of n line with the diagonals.

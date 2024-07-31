@@ -1,0 +1,8 @@
+ASSIGNMENTS
+
+Day1:
+1. List the unique characteristics/features of Python
+2. Write a program to check if a number is Even.
+3. Write a program to convert a lower case letter to upper case.
+4. Check if a letter is vowel or consonant
+5. Check if a number is single digit or not.
