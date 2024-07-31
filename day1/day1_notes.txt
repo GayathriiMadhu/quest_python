@@ -58,3 +58,83 @@ ciel() Returns the next integer number if the decimal part of the number is anyt
 
 So ciel(7.000001) is 8.
  
+1. UNDERSTAND THE PROBLEM. Write the down the required data and information. Isolate and remove the unwanted data and information.
+Also assertain/decide/infer the O/P of the problem.
+OUTCOME: The hidden Direct Question in the given problem statement we get. (The given problem may be story kind or real life scenario)
+ 
+2. FIND THE SOLUTION using mathematically or trial and error or using any specific formula or known technique.
+OUTCOME: You have a clear idea of the solution for the given problem (which we may be implementable)
+ 
+3. WRITE THE ALOGRITHM: An algorithm is a step by step procedure to solve an ATOMIC problem.
+Each step of the algorithm, must be atomic, descriptive and finite.
+OUTCOME: You have all the instructions/steps/statements of the solution.
+ 
+4. PSEUDOCODE: Write the FakeCode:
+Advantage of writing the pseudocode is that, it looks like a code written in some language.
+OUTCOME: You have a solution which you can test (Test it using flow chart or some testing tool or de-bugger, Testing means, Tracing the logic)
+ 
+5. CODE THE SOLUTION: using the language syntax (Python or Java or C++ or C or C# or R)
+OUTCOME: The basic App/Program is ready
+ 
+6. STATISFY THE CONSTRAINTS: Read the constraints and go back to the code and add the required conditions that check the data to be in required range.
+ 
+7. OPTIMIZE THE SOLUTION: The code efficiency, readabality and maintainability must be good. Hence, Allign the code to follow the development standards.
+
+--------------------------------------
+problem 1:
+
+print('Enter a character to check if it is a digit')
+ch = input()
+if ch >= '0' and ch <= '9':
+    print('given character is a digit')
+else:
+    print('given character is Not a digit')
+
+
+------------------------------------
+45		6.76	6		36
+
+121		11.0	11		121
+
+Algorithm:
+
+Read the input number N
+
+Find Root of N and store it a variable ROOT
+
+Now find the Floor of ROOT and store it in INT_ROOT
+
+Now check if INT_ROOT * INT_ROOT is equal to N
+
+If yes: print N is P S
+
+else  : print N is not a P S
+ 
+floor() It removes/truncates the decimal part if any.
+ 
+round() If the decimal part is 0.5 or more then next integer number is returned, else the decimal part is truncated.
+ 
+ciel() Returns the next integer number if the decimal part of the number is anything other than .0
+
+So ciel(7.000001) is 8.
+
+##########################################################
+
+[3:29 PM] Nithin Neelakanta Rao (Unverified)
+Program to count the number of digits in a number
+
+Program to count the number of Odd digits in a number
+
+Program to accept number of lines of the Triangle and draw the Triangle:
+
+*
+
+**
+
+***
+
+****
+
+*****
+ 
+ 
