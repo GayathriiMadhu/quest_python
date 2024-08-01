@@ -3,12 +3,52 @@ ASSIGNMENTS
 Day2:
 
 1. What is the alternative implementation of function overloading in Python?
+    No, Python does not support traditional function overloading because 
+    it is dynamically typed. We can achieve similar functionality 
+    using alternative methods like default parameters, *args and **kwargs,
+    type checking, and the multipledispatch library.
+
 2. Why there is no implicit type casting in Python ?
+    The data types are incompatible, because of which 
+    implicit typecasting is not applicable in python.
+
 3. Why there is no ++ and -- (increment/decrement) operators in Python?
+    Because, in Python, integers are immutable. 
+
 4. What is the difference between @static method and @class method?
+    A class method can access or modify the class state while a 
+    static method can't access or modify it. In general, static
+    methods know nothing about the class state. They are 
+    utility-type methods that take some parameters and work 
+    upon those parameters. On the other hand class methods must
+    have class as a parameter.
+
 5. What is the difference between __new__() and __init__() ?
+    __new__ is responsible for creating and returning a new 
+    instance, while __init__ is responsible for initializing 
+    the attributes of the newly created object. __new__ is 
+    called before __init__ . __new__ happens first, then 
+    __init__ . __new__ can return any object, while __init__ 
+    must return None .
+    __new__ is the constructor and __init__ is the initializer. 
+    Please note that __new__ is implicit. Meaning that if you 
+    don't actually need to modify the creation of an instance 
+    of the class, you don't need to have a new method.
+
 6. What is the syntax to use switch-case in Python. Given an example.
+    Switch Case in Python is a selection control statement, 
+    similar to Python if-else – the switch expression is first 
+    evaluated and then compared to each case. If there is a match, 
+    the associated block of code is executed, else the control 
+    moves forward. 
+
 7. Can the key within a dictionary be a composite value like a list or tuple, or should it be an atomic value such as number or string?
+    Because tuples are hashable and lists are not, if we want to create a composite key to 
+    use in a dictionary we must use a tuple as the key. Write code to create a dictionary called 
+    'd1', and in it give the tuple (1, 'a') a value of “tuple”.
+    A dictionary key must be of a type that is immutable. For example, you can use an integer, 
+    float, string, or Boolean as a dictionary key. However, neither a list nor another dictionary 
+    can serve as a dictionary key, because lists and dictionaries are mutable.
 
 Day2 program assignments:
 
