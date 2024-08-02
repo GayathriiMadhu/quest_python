@@ -1,0 +1,9 @@
+ASSIGNMENTS
+
+DAY 3
+1. Accept N numbers from the user and swap the consecutive elements in the list.
+2. Find the smallestand biggest elements in a list of N numbers
+3. Print the smallest and biggest strings from a list of N strings
+4. Remove the negative numbers from a list of N numbers
+5. Demonstrate the different ways of adding elements to a list and different ways to delete elements from a list
+6. Learn list slicing and list comprehension

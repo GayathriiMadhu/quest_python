@@ -1,7 +1,7 @@
 # 7.  Print the Fibo series of n terms with 1st 2 terms as 1 and 2
 
 n_term=int(input('Enter the limit for Fibo series:'))
-if n_term<0:
+if n_term<0:               
     print('Invalid input')
 elif n_term==1:
     print('1')
