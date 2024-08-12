@@ -26,56 +26,44 @@
 # print(len(listMarks))
 
 class Student():
-    def __init__(self, maths, arts, literature, branch, *prefs):
-        branchesAvailable= ['ECE','BCOM', 'CSE']
-        prefAvailable= ['MATHS','ENGLISH', 'ARTS']
-        isPrefAvaiable = False
+    def __init__(self, maths, arts, literature, branch, preferences):
 
         try:
             self.maths = int(maths)
             self.arts = int(arts)
             self.literature = int(literature)
             self.branch = branch
-            if branch not in branchesAvailable:
-                print('Invalid branch specified', + branch)
-            else: 
-                self.branch = branch.upper()
-            if len(prefs)<1: print('Enter atleast one preference')
-            for eachPref in prefs:
-                if eachPref in prefAvailable:
-                    isPrefAvaiable = True
-                    my_preference = eachPref
-                if isPrefAvaiable == False: print('Your preference is not available')
+            self.preferences = [pref.lower() for pref in preferences]
         except:
             print('Invalid input')  
 
-    def check_marks(self):
+    def marks(self):
         if maths <= 35 or arts <= 35 or literature <= 35:
             print("You are not eligible for any course due to low marks")
             exit()
 
-    def check_eligibility(self):
+    def vacancy(self):
         eligible_for = []
-        if branch == "ec" and arts > 90 and literature > 90 and (my_preference =="arts" or "literature"):
+        if branch == "ECE" and arts > 90 and literature > 90 and (any(pref in ["arts", "literature"] for pref in self.preferences)):
             eligible_for.append("marketing")
-        if branch == "bcom" and maths > 95 and (my_preference == "maths"):
+        if branch == "BCOM" and maths > 95 and ("maths" in self.preferences):
             eligible_for.append("accountancy")
-        if branch == "cs" and maths > 90 and literature > 90 and (my_preference == "maths" or "literature"):
+        if branch == "CSE" and maths > 90 and literature > 90 and (any(pref in ["maths", "literature"] for pref in self.preferences)):
             eligible_for.append("sales")
+
         if eligible_for:
             print("You are eligible for:", ", ".join(eligible_for))
-            exit()
+            # exit()
         else:
             print("You are not eligible for any course")
-            exit()
+            # exit()
 
-
-branch = input("Enter your branch: ").upper()
+branch = input("Enter your branch (ece, bcom, cse): ").upper()
 maths = int(input("Enter your maths marks: "))
 arts = int(input("Enter your arts marks: "))
 literature = int(input("Enter your literature marks: "))
-preference = [input("Enter your preferences: ").upper()].split()
+preference = input("Enter your preferences (separated by commas): ").lower().split(",")
 
 student1 = Student(maths, arts, literature, branch, preference)
-student1.check_marks()
-student1.check_eligibility()
+student1.marks()
+student1.vacancy()
