@@ -1,4 +1,4 @@
-# 2. Find the smallestand biggest elements in a list of N numbers
+# 2. Find the smallest and biggest elements in a list of N numbers
 
 n = int(input("Enter the number of elements: ")) # Get the number of elements
 numbers = []    # Create an empty list to store the numbers
